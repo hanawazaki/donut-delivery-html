@@ -1,0 +1,50 @@
+@import "font", "mixin", "variable";
+
+body {
+  font-family: "Poppins", sans-serif;
+  @media screen and (max-width: 992px) {
+  }
+}
+
+.custom-container {
+  max-width: 1200px !important;
+}
+
+.navbar-brand {
+  img {
+    width: 344px;
+  }
+}
+
+.navbar-nav {
+  padding: 0 50px 0 80px;
+  white-space: nowrap;
+  .nav-item {
+    margin: 0 17px 0 17px;
+
+    .nav-link {
+      color: $brownSolid;
+      font-size: 16px;
+      font-weight: 500;
+      &.active {
+        color: $lightPink;
+      }
+    }
+  }
+}
+
+.cart-button {
+  .icon-cart {
+    width: 40px;
+  }
+
+  .btn-signin {
+    @include greyButton;
+    margin-left: 40px;
+  }
+
+  .btn-signup {
+    @include pinkButton;
+    margin-left: 20px;
+  }
+}

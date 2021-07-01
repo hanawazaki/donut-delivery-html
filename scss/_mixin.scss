@@ -1,0 +1,15 @@
+@mixin pinkButton{
+    border-radius: 4px;
+    padding : 11px 29px 11px 29px ;
+    background-color : $lightPink ;
+    display: inline-block;
+    color: white;
+}
+
+@mixin greyButton{
+    border-radius: 4px;
+    padding : 11px 29px 11px 29px ;
+    background-color : #EEEEEE ;
+    display: inline-block;
+    color: #c9c9c9;
+}
