@@ -23,7 +23,7 @@ body {
     margin: 0 17px 0 17px;
 
     .nav-link {
-      color: $brownSolid;
+      color: $solidBrown;
       font-size: 16px;
       font-weight: 500;
       &.active {
@@ -43,8 +43,70 @@ body {
     margin-left: 40px;
   }
 
-  .btn-signup {
+  .btn-pink {
     @include pinkButton;
     margin-left: 20px;
+  }
+}
+
+.hero {
+  background-image: url("/img/ImageHeader.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 20px;
+
+  .cta-hero {
+    padding: 144px 250px 0 50px;
+
+    h2 {
+      font-family: "Imbue", serif;
+
+      font-size: 75px;
+      font-weight: 700;
+      color: $solidBrown;
+      line-height: 90px;
+      letter-spacing: 0.045em;
+      text-transform: capitalize;
+      margin-bottom: 40px;
+      span {
+        color: $lightPink;
+      }
+    }
+    .search-location {
+      input {
+        margin-bottom: 134px;
+        vertical-align: top;
+        width: 620px;
+        height: 60px;
+        border: 1px solid rgba(255, 74, 139, 0.3);
+        border-style: solid;
+        border-radius: 8px;
+        box-shadow: 0 0 4px rgba(255, 74, 139, 0.2);
+        padding-left: 60px;
+        &:focus {
+          outline: none;
+          background-image: url(/img/location.svg);
+          background-repeat: no-repeat;
+          background-position-x: 20px;
+          background-position-y: center;
+        }
+
+        &::placeholder {
+          background-image: url(/img/location.svg);
+          background-repeat: no-repeat;
+          background-position-x: 20px;
+          background-position-y: center;
+          color: $greyText;
+        }
+      }
+
+      .btn-pink {
+        @include pinkButton;
+        margin-left: -125px;
+        margin-top: 5px;
+        outline: none;
+      }
+    }
   }
 }
