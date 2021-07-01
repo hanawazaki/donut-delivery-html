@@ -1,11 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Imbue:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@500;600&display=swap");
 body {
   font-family: "Poppins", sans-serif;
 }
 
 .custom-container {
   max-width: 1200px !important;
+  margin: 0 auto 0 auto;
 }
 
 .navbar-brand img {
@@ -142,5 +144,35 @@ body {
   margin-left: -125px;
   margin-top: 5px;
   outline: none;
+}
+
+.delivery-contact {
+  font-family: "Oswald", sans-serif;
+  color: white;
+  height: 125px;
+  margin-top: 50px;
+  margin-bottom: 70px;
+  background-color: #ff4a8b;
+  border-radius: 8px;
+  padding: 25px 35px 25px 25px;
+}
+
+.delivery-contact .text-delivery {
+  font-weight: 500;
+  font-size: 55px;
+  text-transform: uppercase;
+  margin-right: 168px;
+}
+
+.delivery-contact .number-delivery {
+  font-weight: 600;
+  font-size: 55px;
+  text-transform: uppercase;
+}
+
+.delivery-contact .number-delivery img {
+  width: 55px;
+  height: 55px;
+  vertical-align: baseline;
 }
 /*# sourceMappingURL=main.css.map */

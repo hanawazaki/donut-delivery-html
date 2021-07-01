@@ -6,8 +6,9 @@ body {
   }
 }
 
+// Section navbar
 .custom-container {
-  max-width: 1200px !important;
+  @include cust-container;
 }
 
 .navbar-brand {
@@ -49,6 +50,7 @@ body {
   }
 }
 
+// section Hero
 .hero {
   background-image: url("/img/ImageHeader.png");
   background-position: center;
@@ -108,5 +110,34 @@ body {
         outline: none;
       }
     }
+  }
+}
+
+// section delivery contact
+.delivery-contact {
+  font-family: "Oswald", sans-serif;
+  color: white;
+  height: 125px;
+  margin-top: 50px;
+  margin-bottom: 70px;
+  background-color: $lightPink;
+  border-radius: 8px;
+  padding: 25px 35px 25px 25px;
+  .text-delivery {
+    font-weight: 500;
+    font-size: 55px;
+    text-transform: uppercase;
+    margin-right: 168px;
+  }
+
+  .number-delivery {
+    img {
+      width: 55px;
+      height: 55px;
+      vertical-align: baseline;
+    }
+    font-weight: 600;
+    font-size: 55px;
+    text-transform: uppercase;
   }
 }
