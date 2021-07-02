@@ -141,3 +141,73 @@ body {
     text-transform: uppercase;
   }
 }
+
+// how to order
+.how-to-order {
+  margin-bottom: 120px;
+  .custom-container {
+    box-shadow: 0px 0px 8px rgba(255, 78, 167, 0.5);
+  }
+
+  h2 {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 72px;
+    text-align: center;
+    letter-spacing: 0.012em;
+    color: $brown;
+    padding: 40px 0 40px 0;
+  }
+
+  .order-step {
+    ul {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      li {
+        display: flex;
+        flex-direction: column;
+        list-style-type: none;
+        width: 200px;
+
+        .order-icon {
+          width: 58px;
+          height: 45px;
+        }
+
+        .checklist-icon {
+          img {
+            width: 25px;
+            height: 25px;
+          }
+          margin: auto;
+          display: inline-block;
+          position: relative;
+
+          &::before {
+            content: "";
+            position: absolute;
+            top: 0.6em;
+            left:-11em;
+            width: 11em;
+            height: 0.5em;
+            background: $lightPink;
+            z-index: -1;
+          }
+          &:first-child::before {
+            content: none;
+          }
+          
+        }
+
+        p {
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 21px;
+          text-align: center;
+          color: #674034;
+        }
+      }
+    }
+  }
+}
